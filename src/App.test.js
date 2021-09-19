@@ -29,7 +29,7 @@ test('button turns to blue when clicked', () => {
   expect(colorButton).toHaveStyle({backgroundColor: 'blue'})
 
   // Exptect to has text Change to red
-  expect(colorButton.textContent).toBe('Change to red');
+  expect(colorButton.textContent).toHaveTextContent('Change to red');
 
 
 })
@@ -44,7 +44,6 @@ test('initial conditions', () => {
   expect(colorButton).toBeEnabled();
 
   // Check that the checkbox starts out unckecked
-  const checkbox = screen.getByRole('checkbox');
   // expect(checkbox).tobe()
 })
 
